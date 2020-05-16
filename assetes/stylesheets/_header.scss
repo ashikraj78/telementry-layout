@@ -1,0 +1,41 @@
+.header{
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.headercontainer{
+    @extend .container;
+    max-width: 1360px;
+}
+
+.brand{
+    h1{
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding-right: 2rem;
+        border-right: 1px solid black;
+    }
+    h2{
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+}
+.nav-items{
+    a{
+        font-size: 1rem;
+        margin-left: 2rem;
+        color: black;
+        padding-bottom: .2rem;
+        &:hover{
+            border-bottom: 1px solid $primary;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:786px){
+    
+}

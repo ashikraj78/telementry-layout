@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .headercontainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex, .flex2, .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex2 {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #ff887b;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #353535;
+}
+
+.btn, .btn3 {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.btn3 {
+  color: #353535;
+  border: 1px solid #353535;
+  font-size: .8rem;
+  padding: 1rem 2rem;
+}
+
+.center-box {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+}
+
+.header {
+  padding: 2rem 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.headercontainer {
+  max-width: 1360px;
+}
+
+.brand h1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.brand h2 {
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+.nav-items a {
+  font-size: 1rem;
+  margin-left: 2rem;
+  color: black;
+  padding-bottom: .2rem;
+}
+
+.nav-items a:hover {
+  border-bottom: 1px solid #ff887b;
+}
+
+.hero {
+  height: 100vh;
+  background: url(../media/pic01.jpg);
+  background-size: cover;
+  border-top: 10px solid #ff887b;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.inner h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  padding-bottom: 2rem;
+  border-bottom: .5px solid white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.feature {
+  margin: 4rem 0;
+}
+
+.col1-1 {
+  width: 30%;
+}
+
+.col1-3 {
+  width: 70%;
+  padding-left: 4rem;
+}
+
+.feature-items {
+  margin-top: 6rem;
+}
+
+.feature-box {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding: 1rem;
+}
+
+.feature-box:first-child {
+  border-right: 1px solid rgba(53, 53, 53, 0.4);
+  border-bottom: 1px solid rgba(53, 53, 53, 0.4);
+}
+
+.feature-box:nth-child(2) {
+  border-bottom: 1px solid rgba(53, 53, 53, 0.4);
+}
+
+.feature-box:last-child {
+  border-left: 1px solid rgba(53, 53, 53, 0.4);
+}
+
+.icon {
+  width: 20%;
+}
+
+.writeup {
+  widows: 80%;
+}
+
+.writeup h3 {
+  color: #ff887b;
+  padding-bottom: 1rem;
+}
+
+.counter {
+  background: #ff887b;
+}
+
+.counterpad {
+  width: 25%;
+  text-align: center;
+  color: white;
+  margin: 4rem 0;
+  border-right: 1px solid white;
+  padding: 1rem 0;
+}
+
+.counterpad h3 {
+  font-size: 2rem;
+}
+
+.counterpad h4 {
+  margin-bottom: 2rem;
+}
+
+.counterpad p {
+  padding: 0 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.counterpad:last-child {
+  border: none;
+}
+
+.about {
+  margin: 2rem 0;
+}
+
+.btn2 {
+  font-size: 1.2rem;
+  color: #353535;
+  padding: 1rem 2.8rem;
+  outline: 0;
+  border: 0;
+  border: 1px solid #beb9b9;
+  margin: 0;
+  cursor: pointer;
+}
+
+.aboutbox {
+  border: 1px solid rgba(53, 53, 53, 0.2);
+  padding: 4rem;
+}
+
+.aboutleft {
+  width: 50%;
+}
+
+.aboutleft h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(53, 53, 53, 0.8);
+  font-weight: 200;
+}
+
+.aboutleft p {
+  margin-bottom: 2rem;
+  color: rgba(53, 53, 53, 0.6);
+}
+
+.aboutright {
+  width: 45%;
+}
+
+.aboutright img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aboutbtn {
+  position: relative;
+}
+
+.consequat {
+  display: none;
+}
+
+.feugiat {
+  display: none;
+}
+
+.testimonial {
+  margin: 5rem 0;
+}
+
+.testimonialleft {
+  height: 32.5rem;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../media/pic03.jpg) 0 0 no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../media/pic03.jpg) 0 0 no-repeat;
+}
+
+.testimonialright {
+  height: 32.5rem;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../media/pic04.jpg) 0 0 no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../media/pic04.jpg) 0 0 no-repeat;
+}
+
+.testimonialtext p {
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonialtext h4 {
+  margin-top: 4rem;
+  color: #ff887b;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.testimonialtext h5 {
+  color: white;
+}
+
+.progress {
+  margin-bottom: 5rem;
+}
+
+.progresscontent {
+  width: 50%;
+}
+
+.progresscontent h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #353535;
+}
+
+.progresscontent img {
+  border-radius: 5px;
+  padding: 2rem 0;
+}
+
+.progresscontent p {
+  color: rgba(53, 53, 53, 0.6);
+  margin-bottom: 2rem;
+}
+
+.progressbar {
+  width: 50%;
+  padding-left: 4rem;
+}
+
+.progressbar p {
+  font-size: .9rem;
+  color: #ff887b;
+}
+
+.progressreport {
+  margin: 2rem 0;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 1px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: #eee;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #ff887b;
+}
+
+.footer {
+  background: #ff887b;
+  padding: 5rem 0;
+}
+
+.address {
+  width: 20%;
+}
+
+.address h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+  padding-bottom: 2rem;
+}
+
+.address i {
+  color: white;
+  padding-right: 1rem;
+}
+
+.address p {
+  color: white;
+  font-weight: 100;
+  font-size: .9rem;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.socialicon {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.socialicon i {
+  padding: 0;
+  margin: 0;
+}
+
+.email {
+  width: 80%;
+  padding-left: 8rem;
+}
+
+.email h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.emailinput {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.emailinput input {
+  width: 48%;
+  background: none;
+  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.emailinput textarea {
+  width: 100%;
+  background: none;
+  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.footerbottom {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+small {
+  margin-top: 4rem;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

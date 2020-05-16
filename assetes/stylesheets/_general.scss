@@ -1,0 +1,101 @@
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+
+// flex
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex2{
+    @extend .flex;
+    flex-wrap: nowrap;   
+    justify-content: left;
+    // align-items: flex-start;
+}
+.center{
+    @extend .flex;
+    justify-content: center;
+}
+
+//  a 
+a{
+    text-decoration: none;
+}
+// i
+i{
+    color: $primary;
+}
+
+// font 
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body{
+    line-height: 1.5;
+}
+
+.heading{
+    font-size: 2rem;
+    color: $text;
+}
+
+// button
+
+.btn{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn3{
+    @extend .btn;
+    color: $text;
+    border: 1px solid $text;
+    font-size: .8rem;
+    padding: 1rem 2rem;
+
+}
+
+
+// center-box
+.center-box{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: white;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+}
+
