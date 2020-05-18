@@ -9,20 +9,69 @@
     <script src="https://kit.fontawesome.com/96673ec042.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- header -->
     <header class="header">
         <div class="headercontainer flex">
             <div class="flex brand">
-                <h1>Telemetry</h1>
+                <a href="#">
+                    <h1>Telemetry</h1>
+                </a>
                 <h2>By Pixelarity</h2>
             </div>
-            <div>
-                <ul class="flex nav-items">
+            <label class="menu flex" for="toogle">
+                <i class="fas fa-bars"></i>
+                <span>MENU</span>
+            </label>
+            <input type="checkbox" id="toogle">
+            <div class="nav-items">
+                <label class="menu flex close-icon" for="toogle">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="flex icon-item-list">
                     <li>
-                        <a href="#">Home</a>
+                        <a class="active" href="#">Home</a>
                     </li>
-                    <li>
+                    <li class="drop-nav-item">
+                        <i class="fas fa-angle-down"></i>
                         <a href="#">Dropdown</a>
+    
+                         <!-- dropdown dropping -->
+                        <div class="dropdown-head">
+                            
+                            <ul class="dropdown">
+                                <i class="fas fa-sort-up"></i>
+                                <li>
+                                    <a href="#">Option One</a>
+                                </li>
+                                <li>
+                                    <a href="#">Option Two</a>
+                                </li>
+                                <li>
+                                    <a href="#">Option Three</a>
+                                </li>
+                                <li class="submenu-nav-item">
+                                   
+                                    <!-- submenu dropping -->
+                                    <a href="#">Submenu</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">Option One</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Option Two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Option Three</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Option four</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
+    
                     <li>
                         <a href="#">Generic</a>
                     </li>
@@ -31,22 +80,26 @@
                     </li>
                 </ul>
             </div>
+            
         </div>
-       
     </header>
+
+    <!-- hero section -->
     <section class="hero center" id="parallax">
         <div class="inner text-center">
             <div class="center center-box">
-                <img src="assetes/media/icons/laptop.png" alt="laptop icon">
+                <i class="fas fa-laptop"></i>
             </div>
             <h2>Ipsum dolor sit amet feugiat et veroeros adipiscing</h2>
             <button class="btn">get started</button>
         </div>
     </section>
+
+    <!-- feature section -->
     <section class="feature">
         <div class="container flex">
             <div class="col1-1">
-                <img src="assetes/media/pic02.jpg" alt="man standing on mountain">
+                <img  class="img"  src="assetes/media/pic02.jpg" alt="man standing on mountain">
             </div>
             <div class="col1-3">
                 <div>
@@ -65,28 +118,28 @@
                         </div>
                         <div class="feature-box flex">
                             <div class="icon">
-                                <i class="far fa-gem"></i>
+                                <i class="far fa-file"></i>
                             </div>
                             <div class="writeup">
-                                <h3>Sed veroeros</h3>
+                                <h3>Magna etiam</h3>
                                 <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                             </div>
                         </div>
                         <div class="feature-box flex">
                             <div class="icon">
-                                <i class="far fa-gem"></i>
+                                <i class="far fa-clone"></i>
                             </div>
                             <div class="writeup">
-                                <h3>Sed veroeros</h3>
+                                <h3>Nulla consequat</h3>
                                 <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                             </div>
                         </div>
                         <div class="feature-box flex">
                             <div class="icon"> 
-                                <i class="far fa-gem"></i>
+                                <i class="far fa-envelope"></i>
                             </div>
                             <div class="writeup">
-                                <h3>Sed veroeros</h3>
+                                <h3>Euismod morbi</h3>
                                 <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                             </div>
                         </div>
@@ -98,6 +151,8 @@
         </div>
 
     </section>
+
+    <!-- counter section -->
     <section class="counter">
         <div class="container flex">
             <div class="counterpad">
@@ -106,23 +161,26 @@
                 <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
             </div>
             <div class="counterpad">
-                <h3>128</h3>
-                <h4>Sed magna</h4>
+                <h3>640</h3>
+                <h4>Etiam dolor</h4>
                 <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
             </div>
             <div class="counterpad">
-                <h3>128</h3>
-                <h4>Sed magna</h4>
+                <h3>256 </h3>
+                <h4> Nullam amet</h4>
                 <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
             </div>
             <div class="counterpad">
-                <h3>128</h3>
-                <h4>Sed magna</h4>
+                <h3>768</h3>
+                <h4>Sit euismod</h4>
                 <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
             </div>
+            
         </div>
 
     </section>
+
+    <!-- about section -->
     <section class="about">
         <div class="container">
             <div class="aboutbtn">
@@ -142,7 +200,7 @@
                         <button class="btn3">learn more</button>
                     </div>
                     <div class="aboutright">
-                        <img src="assetes/media/pic05.jpg" alt="sitting">
+                        <img class="img" src="assetes/media/pic05.jpg" alt="sitting kid">
                     </div>
                 </div>
             </div>
@@ -158,7 +216,7 @@
                         <button class="btn3">learn more</button>
                     </div>
                     <div class="aboutright">
-                        <img src="assetes/media/pic05.jpg" alt="sitting">
+                        <img src="assetes/media/pic05.jpg" alt="sitting kid">
                     </div>
                 </div>
             </div>
@@ -174,7 +232,7 @@
                         <button class="btn3">learn more</button>
                     </div>
                     <div class="aboutright">
-                        <img src="assetes/media/pic05.jpg" alt="sitting">
+                        <img src="assetes/media/pic05.jpg" alt="sitting kid">
                     </div>
                 </div>
             </div>
@@ -182,11 +240,13 @@
         </div>
 
     </section>
+
+    <!-- testimonial section -->
     <section class="testimonial">
         <div class="flex">
             <div class="testimonialleft center">
                 <div class="text testimonialtext container">
-                    <div class="center-box center">
+                    <div class="center-box2 center">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <p>"Sed ultrices consequat dolor nulla fringilla dignissim"</p>
@@ -196,7 +256,7 @@
             </div>
             <div class="testimonialright center">
                 <div class="text testimonialtext container">
-                    <div class="center-box center">
+                    <div class="center-box2 center">
                         <i class="fas fa-quote-left"></i>
                     </div>
                     <p>"Sed ultrices consequat dolor nulla fringilla dignissim"</p>
@@ -206,11 +266,13 @@
             </div>
         </div>
     </section>
+
+    <!-- progress section -->
     <section class="progress">
         <div class="container flex">
             <div class="progresscontent">
                 <h2>Feugiat lorem ipsum dolor velit amet dolor dignissim pharetra</h2>
-                <img src="assetes/media/pic06.jpg" alt="landscape">
+                <img class="img" src="assetes/media/pic06.jpg" alt="A landscape">
                 <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                 <button class="btn3">learn more</button>
             </div>
@@ -243,64 +305,76 @@
             </div>
         </div>
     </section>
+
+    <!-- footer -->
     <footer class="footer">
         <section class="container">
-            <div class="footerbottom flex">
+            <div class="footerbottom flex4">
                 <div class="address">
                     <h3>Contact</h3>
-                    <div class="flex2 padding"> 
+                    <div class="flex3 padding"> 
                         <i class="fas fa-home"></i>
-                        <p>1234 Fictional Street #5432
-                            Nashville, TN 00000-0000</p>
+                        <address>1234 Fictional Street #5432
+                            Nashville, TN 00000-0000</address>
                     </div>
                     <div class="flex2 padding"> 
                         <i class="fas fa-phone"></i>
-                        <p>(000) 000-0000</p>
+                        <a href="#">(000) 000-0000</a>
                     </div>
                     <div class="flex2 padding"> 
                         <i class="fas fa-envelope"></i>
-                        <p>info@untitled.tld</p>
+                        <a href="#">info@untitled.tld</a>
                     </div>
-                    <div class="socialmedia flex">
-                        <div class="socialicon">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <div class="socialicon">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                        <div class="socialicon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="socialicon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="socialicon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                    </div>
+                    <ul class="socialmedia flex">
+                        <li class="socialicon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="socialicon">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socialicon">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="socialicon">
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="socialicon">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="email">
-                    <div >
+                    <form action="">
                         <h2>Email Us</h2>
                         <div class="emailinput flex">
                             <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
+                            <input type="email" placeholder="Email">
                         </div>
-                        <div class="emailinput">
+                        <div class="message">
                             <textarea name="" id="" cols="20" rows="5" placeholder="Message"></textarea>
                         </div>
                         <button class="btn">Send Message</button>
-                    </div>
-
+                    </form>
                 </div>
             </div>
             <small class="center">
                &copy; Untitled. All rights reserved.
             </small>
         </section>
-
     </footer>
-    <script src=main.js>
+
+    <!-- java script -->
+    <script src="assetes/java-script/main.js">
        
     </script>
    

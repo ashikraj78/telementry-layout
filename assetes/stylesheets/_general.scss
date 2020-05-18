@@ -32,7 +32,14 @@
     @extend .flex;
     flex-wrap: nowrap;   
     justify-content: left;
-    // align-items: flex-start;
+}
+.flex3{
+    display: flex;
+    align-items: flex-start;
+}
+.flex4{
+    @extend .flex;
+    align-items: flex-start;
 }
 .center{
     @extend .flex;
@@ -61,6 +68,7 @@ body{
 .heading{
     font-size: 2rem;
     color: $text;
+    font-weight: 300;
 }
 
 // button
@@ -74,6 +82,10 @@ body{
     color: white;
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background:rgba($color: #fff, $alpha: 0.1);
+    }
 }
 
 .btn3{
@@ -82,20 +94,59 @@ body{
     border: 1px solid $text;
     font-size: .8rem;
     padding: 1rem 2rem;
-
+    &:hover{
+        background:rgba($color:grey, $alpha: 0.1);
+    }
+    
 }
-
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
 // center-box
 .center-box{
-    height: 4rem;
-    width: 4rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     background: white;
     margin: 0 auto;
 }
+.center-box2{
+    @extend .center-box;
+    height: 4.5rem;
+    width: 4.5rem;
+    background: $primary;
+    i{
+        color: white;
+        font-size: 2rem;
+    }
+    
+}
+
 
 .text {
     text-align: center;
 }
 
+@media screen and (max-width:768px){
+   .flex{
+       flex-wrap: wrap;
+   }
+   .container{
+       max-width: 100%;
+   }
+   .btn3 ,.btn{
+       width: 100%;
+   }
+    .heading{
+        font-size: 1.5rem;
+    }
+}
+
+.act {
+    background-color: white!important;
+    padding-top: 1.5rem!important;
+    border-bottom: 1px solid white!important;
+}

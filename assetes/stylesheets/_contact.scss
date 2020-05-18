@@ -3,6 +3,7 @@
     padding: 5rem 0;
 }
 .address{
+    margin-bottom: 4rem;
     width: 20%;
     h3{
         font-size: 2rem;
@@ -19,16 +20,27 @@
         font-weight: 100;
         font-size: .9rem;
     }
+    a{
+        color: white;
+        font-weight: 100;
+        font-size: .9rem;
+    }
+    address{
+        color: white;
+        font-weight: 100;
+        font-size: .9rem;
+    }
 }
 
 .padding{
     padding-bottom: 2rem;
+    
 }
 
 
 .socialicon{
-    width: 2rem;
-    height: 2rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background: none;
     border: 1px solid white;
     display: flex;
@@ -38,41 +50,66 @@
     i{
       padding:0;
       margin: 0;
-     }
+      font-size: 1.2rem;
+    }
+    &:hover{
+        background:rgba($color: #fff, $alpha: 0.1);
+    }
+
 }
 
 .email{
-    width: 80%;
+    width: 70%;
     padding-left: 8rem;
     
     h2{
         color: white;
         font-size: 2rem;
         font-weight: 100;
+        margin-bottom: 3rem;
+    }
+    button{
+        margin-top: 2rem;
     }
 }
-.emailinput{
+.emailinput ,.message{
     width: 100%;
-    padding-bottom: 1rem;
     input{
         width: 48%;
         background: none;
         border: 0;
-        border: 1px solid rgba($color: #fff, $alpha: 0.5);
+        border: 1px solid rgba($color: #fff, $alpha: 0.4);
+        outline:0;
         border-radius: 5px;
         font-size: 1rem;
         padding: 1rem;
         color: white;
+        &::placeholder{
+            color: rgba($color: #fff, $alpha: 0.5);
+            font-weight: 100;
+        }
+        &:focus{
+            border: 1px solid white;
+        }
     }
     textarea{
+        margin-top: 2rem;
         width: 100%;
         background: none;
         border: 0;
-        border: 1px solid rgba($color: #fff, $alpha: 0.5);
+        border: 1px solid rgba($color: #fff, $alpha: 0.4);
+        outline:0;
         border-radius: 5px;
         font-size: 1rem;
         padding: 1rem;
         color: white;
+        &::placeholder{
+            color: rgba($color: #fff, $alpha: 0.5);
+            font-weight: 100;
+        }
+        &:focus{
+            border: 1px solid white;
+        }
     }
 }
 .footerbottom{
@@ -83,4 +120,35 @@ small{
     margin-top: 4rem;
     font-size: .9rem;
     color:rgba($color: #fff, $alpha: 0.5);
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    .socialmedia{
+        margin-right: 5rem;
+    }
+    .address{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .email{
+        width: 100%;
+        padding: 0 ;
+        h2{
+            padding-bottom: 1rem;
+        }
+        
+    }
+    .emailinput{
+        input{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    .message{
+        margin-top: -2rem;
+    }
 }

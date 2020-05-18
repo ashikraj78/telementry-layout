@@ -2,6 +2,7 @@
     margin:2rem 0;
 }
 .btn2{
+    background-color: rgb(226, 226, 226);
     font-size: 1.2rem;
     color: $text;
     padding: 1rem 2.8rem;
@@ -10,10 +11,16 @@
     border: 1px solid rgb(190, 185, 185);
     margin: 0;
     cursor: pointer;
+    &:focus{
+        background-color: white;
+        padding-top: 1.5rem;
+        border-bottom:1px solid white ;
+    }
 }
 .aboutbox{
     border: 1px solid rgba($color: $text, $alpha: 0.2);
     padding: 4rem;
+    margin-top: -1px;
 }
 
 .aboutleft{
@@ -34,13 +41,13 @@
     width: 45%;
     img{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 }
-.aboutbtn{
-    position: relative;
-    // z-index: 5;
-}
+// .aboutbtn{
+//     // position: relative;
+//     // z-index: 5;
+// }
 
 
 .consequat{
@@ -74,10 +81,10 @@
         color: white;
         font-weight: 300;
         padding-left: 2rem;
-        margin-bottom: 4rem;
+        margin: 2rem 0 4rem 0;
     }
     h4{
-        margin-top: 4rem;
+        // margin-top: 4rem;
         color: $primary;
         margin-bottom:1rem ;
         font-size: 1.2rem;
@@ -99,14 +106,15 @@
         font-size: 2rem;
         font-weight: 100;
         color: $text;
+        margin-bottom: 2rem;
     }
-    img{
-        border-radius: 5px;
-        padding: 2rem 0;
-    }
+    // .img{
+    //     padding: 2rem 0;
+    //     border-radius: 5px;
+    // }
     p{
         color: rgba($color: $text, $alpha: 0.6);
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 
 }
@@ -134,4 +142,54 @@ progress[value]::-webkit-progress-bar{
 }
 progress[value]::-webkit-progress-value{
     background:$primary;
+}
+
+@media screen and (max-width:768px){
+
+    .aboutleft{
+        width: 100%;
+        order: 1;
+        h3{
+            font-size: 1.5rem;
+            padding-top: 2rem;
+        }
+    }
+    .aboutright{
+        width: 100%;
+        
+    }
+    .aboutbox{
+        padding:1rem;
+    }
+
+    .testimonialleft{
+        width: 100%;
+    }
+    .testimonialright{
+        width: 100%;
+    }
+
+    .progresscontent{
+        width: 100%;
+    }
+    .progressbar{
+        width: 100%;
+        padding: 0;
+    }
+    .progress{
+        margin-bottom: 1rem;    
+    }
+    .btn2{
+        width: 33.33%;
+        padding: 1rem .5rem;
+        font-size: .9rem;
+    }
+    .testimonialtext{
+        p{
+            font-size: 1.5rem;
+            padding-left: 0;
+            margin:2rem;
+        }
+    }
+
 }
