@@ -208,6 +208,7 @@ body {
   background-color: white !important;
   padding-top: 1.5rem !important;
   border-bottom: 1px solid white !important;
+  color: #ff887b !important;
 }
 
 .header {
@@ -658,6 +659,7 @@ body {
   background-color: white;
   padding-top: 1.5rem;
   border-bottom: 1px solid white;
+  color: #ff887b;
 }
 
 .aboutbox {
